@@ -1,0 +1,32 @@
+{
+    "name": "Replace",
+    "version": "1.0",
+    "description": "Replacing specific text as the user sees fit, whether it's censoring bad words with funny emojis, or just manipulating words on a page for amusement. The code is designed to be customizable for future use. For example, inputting user choice for which word to replace with any element of choice.",
+    "permissions": ["tabs", "activeTab", "declarativeContent", "storage"],
+    "author": {
+        "name": "Ruthba Anam && Mohtasim Chowdhury"
+    },
+    "background": {
+        "scripts": ["background.js"], 
+        "persistent": false
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*/*"
+            ],
+            "js": [ 
+            	"jquery-3.3.1.min.js",
+                "content.js"
+            ],
+            "run_at": "document_end"
+        }
+    ],
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_popup": "popup.html",
+        "default_title": "Text Replacer"
+      },
+    "options_page": "options.html",
+    "manifest_version": 2
+}

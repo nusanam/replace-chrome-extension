@@ -1,0 +1,16 @@
+#replacement, #saveReplacement {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center; 
+    color: #b39283;
+}
+
+#resetWords {
+    height: 50px;
+    font-family: 'Montserrat', sans-serif;
+    color: #b39283;
+    width: 50px;
+    border: 8px  #b39283 solid;
+    border-radius: 5px;
+    background-color: white;
+    position: relative;
+}
