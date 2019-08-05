@@ -1,4 +1,4 @@
-#codesmith hackathon
+# codesmith hackathon
 
 - Google Chrome extension for codesmith hackathon project.
 - Brute force adaptation using jQuery and vanilla Javascript to access specific text Nodes and replace them with either emojis or different text. 
